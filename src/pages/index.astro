@@ -2,10 +2,11 @@
 // Component Imports
 
 import type { HTMLAttributes } from 'astro/types';
-import Button from "../components/Button.astro";
+import Button from "../components/utils/Button.astro";
 import Main from "../layouts/main.astro";
 import { siteConfig } from "../const.ts";
-import { factSection } from "../const.ts";
+import DynamicFactSection from '../components/section/FactSection.astro';
+import ProblemSection from '../components/section/ProblemSection.astro';
 ---
 
 <Main title={siteConfig.SITE_TITLE}>
@@ -73,16 +74,31 @@ import { factSection } from "../const.ts";
             <p class="text-gray-500 sm:text-xl dark:text-gray-400">Jika anda menjalankan bisnis di sosmed dan tiktok, saya yakin anda pasti memiliki harapan seperti ini</p>
         </div>
         <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-12 md:space-y-0">
-            {factSection.map(factSection => (
-              <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900" >
-                  {factSection.icon}                  
-                </div>
-                <h3 class="mb-2 text-xl font-bold dark:text-white">{factSection.title}</h3>
-                <p class="text-gray-500 dark:text-gray-400">{factSection.description}</p>
-              </div>
-            ))}
+          <DynamicFactSection />
         </div>
     </div>
   </section>
+
+  <!-- PROBLEM SECTION -->
+  <div class="overflow-hidden bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+        <div class="lg:pr-8 lg:pt-4">
+          <div class="lg:max-w-lg">
+            <h2 class="text-base font-semibold leading-7 text-red-600">pengen fyp tapi malah fail</h2>
+            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{siteConfig.problemH1}</p>
+            <p class="mt-6 text-lg leading-8 text-gray-600">{siteConfig.problemP}</p>
+            <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+              <ProblemSection />
+            </dl>
+          </div>
+        </div>
+        <div class="">
+          <img src="https://i.ibb.co.com/mGzPWTQ/problem.png" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442">
+    
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </Main>

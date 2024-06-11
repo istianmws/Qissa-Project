@@ -1,0 +1,40 @@
+---
+import Icon2 from '../icons/FactIcon2.astro';
+import Icon1 from '../icons/FactIcon1.astro';
+// Impor ikon lain sesuai kebutuhan
+
+const factSection = [
+    {
+        title: "Pengen sosmednya rame",
+        description: "Punya akun sosmed / tiktok yang berfollower real person dan aktif berinteraksi",
+        icon: Icon2
+    },
+
+    {
+        title: "Viral dan terkenal",
+        description: "Jangkauan konten yang luas, brand bisnis anda dikenal sehingga meningkatkan penjualan",
+        icon: Icon1
+    },
+    {
+        title: "Efisiensi biaya",
+        description: "Hemat gaji karyawan untuk kelola sosmed, anda bisa pakai budgetnya untuk keperluan lain",
+        icon: Icon2
+    },
+    {
+        title: "Branding identity",
+        description: "Brand lebih depat dikenal lewat sosial media termasuk tiktok, sehingga sosmed tidak bisa anda tinggalkan",
+        icon: Icon1
+    }
+
+];
+---
+
+  {factSection.map(factSection => (
+    <div >
+      <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+        <factSection.icon />
+      </div>
+      <h3 class="mb-2 text-xl font-bold dark:text-white">{factSection.title}</h3>
+      <p class="text-gray-500 dark:text-gray-400">{factSection.description}</p>
+    </div>
+  ))}

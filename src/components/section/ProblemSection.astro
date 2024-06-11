@@ -1,0 +1,47 @@
+---
+// Impor ikon lain sesuai kebutuhan
+import Icon1 from "../icons/ProblemIcon1.astro";
+import Icon2 from "../icons/ProblemIcon2.astro";
+import Icon3 from "../icons/ProblemIcon3.astro";
+import Icon4 from "../icons/ProblemIcon4.astro";
+const problemSection = [
+  {
+    title: "Ga ada spend waktu, ",
+    description:
+      "Pengen buat konten sosmed / tiktok, tapi ga bisa atau ga ada waktu",
+    icon: Icon1,
+  },
+
+  {
+    title: "Ga ada pemirsa, ",
+    description: "Sudah coba buat konten sendiri, tapi masih sepi pemirsa",
+    icon: Icon2,
+  },
+  {
+    title: "Karyawan Sosmed mahal, ",
+    description:
+      "Coba hire karyawan khusus sosmed / tiktok, tapi masih kurang perform atau bahkan minta gaji besar",
+    icon: Icon3,
+  },
+  {
+    title: "Dapet agency abal-abal, ",
+    description:
+      "Coba kerja sama dengan agency lain, tapi tidak memperhatikan performa kontennya",
+    icon: Icon4,
+  },
+];
+---
+
+{
+  problemSection.map((problemSection) => (
+    <div class="relative pl-9">
+      <dt class="inline font-semibold text-gray-900">
+        <problemSection.icon />
+        {problemSection.title}
+      </dt>
+      <dd class="inline">
+        {problemSection.description}
+      </dd>
+    </div>
+  ))
+}
