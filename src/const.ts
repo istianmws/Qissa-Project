@@ -10,5 +10,6 @@ export const siteConfig = {
     headlineP: 'Solusi manajemen, naikkan view dan follower akun tiktok biar bisnis makin eksis',
     problemP: 'Hal inilah yang mungkin membuat para bisnis owner seperti anda, melakukan hal-hal berikut ini:',
     problemH1: 'Masalah yang sering dihadapi',
-    problemH2: 'Yang itu semua mengakibatkan brand bisnis anda kurang dikenal luas, sulit mendapatkan prospek atau calon pelanggan, hingga peningkatan omset kurang signifikan.'
+    problemH2: 'Yang itu semua mengakibatkan brand bisnis anda kurang dikenal luas, sulit mendapatkan prospek atau calon pelanggan, hingga peningkatan omset kurang signifikan.',
+    introduceH1: 'Memperkenalkan layanan manajemen akun tiktok qissa.id. Konten viral, akun terkenal. Follower meningkat, live shopping siap ngangkat',
 };
