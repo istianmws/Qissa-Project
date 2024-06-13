@@ -12,4 +12,7 @@ export const siteConfig = {
     problemH1: 'Masalah yang sering dihadapi',
     problemH2: 'Yang itu semua mengakibatkan brand bisnis anda kurang dikenal luas, sulit mendapatkan prospek atau calon pelanggan, hingga peningkatan omset kurang signifikan.',
     introduceH1: 'Memperkenalkan layanan manajemen akun tiktok qissa.id. Konten viral, akun terkenal. Follower meningkat, live shopping siap ngangkat',
+    benefitH1: 'Di qissa.id, anda akan mendapatkan layanan sebagai berikut:',
+    benefitTAG: 'Banyak Manfaat bersama Qissa.id',
+    benefitSlug: 'untung bersama qissa.id',
 };

@@ -1,0 +1,92 @@
+---
+import BenefitIcon1 from "../icons/BenefitIcon1.astro";
+import BenefitIcon2 from "../icons/BenefitIcon2.astro";
+import BenefitIcon3 from "../icons/BenefitIcon3.astro";
+import BenefitIcon4 from "../icons/BenefitIcon4.astro";
+import BenefitIcon5 from "../icons/BenefitIcon5.astro";
+import BenefitIcon6 from "../icons/BenefitIcon6.astro";
+// Impor ikon lain sesuai kebutuhan
+
+const benefitSection = [
+  {
+    title: "Pengen sosmednya rame",
+    description:
+      "Konten akun bisnis anda dihandle secara khusus oleh 1-2 orang tiktok specialist, yang sudah menangani puluhan brand baik dari UMKM maupun Corporate",
+    icon: BenefitIcon1,
+  },
+
+  {
+    title: "Viral dan terkenal",
+    description:
+      "Talent dan VO profesional yang sudah berpengalaman membuat konten tiktok untuk berbagai brand bisnis",
+    icon: BenefitIcon2,
+  },
+  {
+    title: "Efisiensi biaya",
+    description:
+      "Content brief, yang akan memastikan semua konten yang kami buat sesuai dengan konsep awal yang disetujui bersama sehingga proses branding akun terstruktur dengan baik",
+    icon: BenefitIcon3,
+  },
+  {
+    title: "Branding identity",
+    description:
+      "Full handle, monitoring performa akun, report & analaytic, anda terima beres dan fokus pengembangan bisnis / produk",
+    icon: BenefitIcon4,
+  },
+  {
+    title: "Branding identity",
+    description:
+      "Kolaborasi antara tiktok specialist kami dengan tim anda untuk mengoptimalkan performa konten",
+    icon: BenefitIcon5,
+  },
+  {
+    title: "Branding identity",
+    description:
+      "konten yang disesuaikan dengan target audiens yang memiliki dampak maksimal dan membantu Anda mencapai hasil yang diinginkan.",
+    icon: BenefitIcon6,
+  },
+];
+---
+
+{
+  benefitSection.map((benefit) => (
+    <div class="relative pl-16">
+      <dt class="text-base font-semibold leading-7 text-gray-900">
+        <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-pink-500">
+          <benefit.icon class="h-6 w-6 text-white" />
+        </div>
+        {benefit.title}
+      </dt>
+      <dd class="mt-2 text-base leading-7 text-gray-600">
+        {benefit.description}
+      </dd>
+    </div>
+  ))
+}
+<!-- <div class="relative pl-16">
+  <dt class="text-base font-semibold leading-7 text-gray-900">
+    <div
+      class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600"
+    >
+      <svg
+        class="h-6 w-6 text-white"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z"
+        ></path>
+      </svg>
+    </div>
+    Push to deploy
+  </dt>
+  <dd class="mt-2 text-base leading-7 text-gray-600">
+    Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper
+    morbi. Odio urna massa nunc massa.
+  </dd>
+</div> -->
