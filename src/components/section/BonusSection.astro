@@ -1,0 +1,40 @@
+---
+import Icon2 from '../icons/FactIcon2.astro';
+import Icon1 from '../icons/FactIcon1.astro';
+// Impor ikon lain sesuai kebutuhan
+
+const bonusSection = [
+    {
+        // title: "Pengen sosmednya rame",
+        description: "Free riset hashtag & music",
+        icon: Icon2
+    },
+
+    {
+        // title: "Viral dan terkenal",
+        description: "Free caption & Scheduled post",
+        icon: Icon1
+    },
+    {
+        // title: "Efisiensi biaya",
+        description: "Grup koordinasi",
+        icon: Icon2
+    },
+    {
+        // title: "Branding identity",
+        description: "Report & evaluasi bulanan",
+        icon: Icon1
+    }
+
+];
+---
+
+  {bonusSection.map(bonusSection => (
+    <div class="grid justify-items-center " >
+      <div class=" rounded-full bg-primary-100 dark:bg-primary-900">
+        <bonusSection.icon />
+      </div>
+      {/* <h3 class="mb-2 text-xl font-bold dark:text-white">{factSection.title}</h3> */}
+      <p class="text-gray-500 dark:text-gray-400">{bonusSection.description}</p>
+    </div>
+  ))}
