@@ -9,6 +9,7 @@ import DynamicFactSection from "../components/section/FactSection.astro";
 import ProblemSection from "../components/section/ProblemSection.astro";
 import BenefitSection from "../components/section/BenefitSection.astro";
 import BonusSection from "../components/section/BonusSection.astro";
+import Social from "../components/section/SocialProofSection.astro";
 ---
 
 <Main title={siteConfig.SITE_TITLE}>
@@ -227,7 +228,7 @@ import BonusSection from "../components/section/BonusSection.astro";
   <section class="bg-white dark:bg-gray-900">
     <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
         <img class="w-full dark:hidden" src="https://i.ibb.co.com/DL4PT7Z/undraw-Software-engineer-re-tnjc.png" alt="dashboard image">
-        <img class="w-full hidden dark:block" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg" alt="dashboard image">
+        <img class="w-full hidden dark:block" src="https://i.ibb.co.com/DL4PT7Z/undraw-Software-engineer-re-tnjc.png" alt="dashboard image">
         <div class="mt-4 md:mt-0">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{siteConfig.CTA1}</h2>
             <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">{siteConfig.CTA1p}</p>
@@ -238,4 +239,20 @@ import BonusSection from "../components/section/BonusSection.astro";
         </div>
     </div>
 </section>
+
+<!-- PROFF -->
+
+<!-- Social Proof -->
+<section class="bg-white dark:bg-gray-900">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+      <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{siteConfig.SocialProofH1}</h2>
+          <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">{siteConfig.SocialProofp}</p>
+      </div> 
+      <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2">
+          <Social/>
+      </div>  
+  </div>
+</section> 
+
 </Main>
