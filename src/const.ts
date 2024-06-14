@@ -17,6 +17,8 @@ export const siteConfig = {
     benefitSlug: 'untung bersama qissa.id',
     CTA1: ' Jangkau pasar potensial bisnis anda dengan manajemen akun tiktok profesional. ',
     CTA1p: 'Isikan data diri anda di form yang disediakan, admin sales kami akan menghubungi anda dan memberikan penawaran paket beriklan terbaik sesuai budget anda.',
+    CTA2: 'Jangan ragu untuk menghubungi kami',
+    CTA2p: 'Scale up bisnis anda dengan akun tiktok bisnis profesional, hubungi kami, slot klien kami terbatas  ',
     SocialProofH1: 'Apa kata mereka tentang qissa.id',
     SocialProofp: 'Kami bangga dengan kepercayaan yang diberikan oleh para pelanggan kami. Berikut adalah beberapa testimoni dari mereka.',
     ClosingH1: 'Tunggu apa lagi?',
