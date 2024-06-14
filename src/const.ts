@@ -15,4 +15,6 @@ export const siteConfig = {
     benefitH1: 'Di qissa.id, anda akan mendapatkan layanan sebagai berikut:',
     benefitTAG: 'Banyak Manfaat bersama Qissa.id',
     benefitSlug: 'untung bersama qissa.id',
+    CTA1: ' Jangkau pasar potensial bisnis anda dengan manajemen akun tiktok profesional. ',
+    CTA1p: 'Isikan data diri anda di form yang disediakan, admin sales kami akan menghubungi anda dan memberikan penawaran paket beriklan terbaik sesuai budget anda.',
 };
