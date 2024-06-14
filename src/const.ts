@@ -19,4 +19,6 @@ export const siteConfig = {
     CTA1p: 'Isikan data diri anda di form yang disediakan, admin sales kami akan menghubungi anda dan memberikan penawaran paket beriklan terbaik sesuai budget anda.',
     SocialProofH1: 'Apa kata mereka tentang qissa.id',
     SocialProofp: 'Kami bangga dengan kepercayaan yang diberikan oleh para pelanggan kami. Berikut adalah beberapa testimoni dari mereka.',
+    ClosingH1: 'Tunggu apa lagi?',
+    Closingp: 'Memiliki kolam sendiri sangat penting bagi keberlangsunga bisnis jangka panjang. Kolam yang siap anda pancing salah satunya berasal dari akun tiktok bisnis profesional. Jangan tunggu kompetitor anda mendahului, jangkau pasar potensial dengan manajemen akun tiktok terbaik. ',
 };
