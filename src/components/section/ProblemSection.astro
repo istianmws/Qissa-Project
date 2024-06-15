@@ -6,25 +6,25 @@ import Icon3 from "../icons/ProblemIcon3.astro";
 import Icon4 from "../icons/ProblemIcon4.astro";
 const problemSection = [
   {
-    title: "Ga ada spend waktu, ",
+    title: "Ga ada Spend Waktu ",
     description:
       "Pengen buat konten sosmed / tiktok, tapi ga bisa atau ga ada waktu",
     icon: Icon1,
   },
 
   {
-    title: "Ga ada pemirsa, ",
+    title: "Ga ada Pemirsa ",
     description: "Sudah coba buat konten sendiri, tapi masih sepi pemirsa",
     icon: Icon2,
   },
   {
-    title: "Karyawan Sosmed mahal, ",
+    title: "Karyawan Sosmed Mahal ",
     description:
       "Coba hire karyawan khusus sosmed / tiktok, tapi masih kurang perform atau bahkan minta gaji besar",
     icon: Icon3,
   },
   {
-    title: "Dapet agency abal-abal, ",
+    title: "Dapet Agency Abal-Abal ",
     description:
       "Coba kerja sama dengan agency lain, tapi tidak memperhatikan performa kontennya",
     icon: Icon4,
@@ -34,11 +34,15 @@ const problemSection = [
 
 {
   problemSection.map((problemSection) => (
-    <div class="relative pl-9">
-      <dt class="inline font-semibold text-gray-900">
-        <problemSection.icon />
-        {problemSection.title}
+    <div class="relative">
+      <dt class="inline font-semibold text-white">
+        <button class=" bg-rose-500  mb-3 text-lg p-2.5 text-center inline-flex items-center p-3 rounded-lg">
+          <problemSection.icon />
+        </button>
+        
       </dt>
+      <h6 class="text-lg font-bold text-black">{problemSection.title}</h6>
+        
       <dd class="inline">
         {problemSection.description}
       </dd>

@@ -1,13 +1,15 @@
 ---
 import Icon2 from '../icons/FactIcon2.astro';
 import Icon1 from '../icons/FactIcon1.astro';
+import IconHastag from '../icons/FactIconHastag.astro';
+import IconKoor from '../icons/FactIconKoor.astro';
 // Impor ikon lain sesuai kebutuhan
 
 const bonusSection = [
     {
         // title: "Pengen sosmednya rame",
         description: "Free riset hashtag & music",
-        icon: Icon2
+        icon: IconHastag
     },
 
     {
@@ -18,7 +20,7 @@ const bonusSection = [
     {
         // title: "Efisiensi biaya",
         description: "Grup koordinasi",
-        icon: Icon2
+        icon: IconKoor
     },
     {
         // title: "Branding identity",
@@ -31,7 +33,7 @@ const bonusSection = [
 
   {bonusSection.map(bonusSection => (
     <div class="grid justify-items-center " >
-      <div class=" rounded-full bg-primary-100 dark:bg-primary-900">
+      <div class=" rounded-full bg-primary-100 dark:bg-primary-900 p-4">
         <bonusSection.icon />
       </div>
       {/* <h3 class="mb-2 text-xl font-bold dark:text-white">{factSection.title}</h3> */}
