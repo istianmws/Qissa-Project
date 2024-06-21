@@ -186,6 +186,29 @@ import Social from '../components/section/SocialProofSection.astro';
     </div>
   </section>
 
+  <!-- GAMBAR -->
+  <section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+      <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-12 md:space-y-0">
+        <div class="flex items-center justify-center">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWyGI-nI1xhtCE5Qfc4V_OuzyK2NDZysPxGmwJ37OQrdv1xYXdvEKyPuemp4r_QUQNJG_4gYGqqEuh4flVaSfiIUDNxsUTdb5WIe-7LaSBXLl6SFzNi4GAP2YSUDkS2MV9AkGWEEShIn_o08JJXUf-H-KMpEVjOmonePGhrfv7lEMCqglAoJstMEIzbDw/s320/1.png" alt="produk" ></img>
+        </div>
+        <div class="flex items-center justify-center">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9mcu1enJROP2rpthbP0MOVPl7P_TSB_thAEqFzXfNZyBCUwoPxJGy85-BvVkNgA9NPC8MlZaszbSUYcDBZiGz6ZevW0SvhI30Lt0sUOI61yhCqIOqIA82jiLhJAxAehiVOih2xwLPtf3J2VT-lwnds_lLAUzs5FdcIgsqt01ItVUAav6D0R9c_a9iC94/s320/2.png" alt="produk" ></img>
+        </div>
+        <div class="flex items-center justify-center">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrHKPyFp3dS_KrIaGa7eLaYftke02-mZQNdnCw6Zl58ylKhQKHfjxPrZ0strzD3n4vMh5jYAfFZofI9yKo0a3pqABf3kmpGAVOYOGLeOmVLyeXd7iDwcWdVSEbmcZvNvunmSM69__4fTPhkjuw1sQQNT4VUOYThfnCUDCTnqOvPH_Df9WamgETRu2-1R0/s320/3.png" alt="produk" ></img>
+        </div>
+        <div class="flex items-center justify-center">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7JKoBR8pgyl_CZ2h21DpCRysIAY0n2jszzJyGJ6jn6C1D-jG9J7hICOBZqIdMYEwVGMOv0wSVqnbJgKRo9EY6AEy3VAFmPguMEBHmn7mtBBIvWgehfydk5DVuOgxUEkEZM_xXxb5hycLg0tsqTPUqtRIj1HNdf69NX9GFrGduqdQ5uQyDB9l1t1nl5-Q/s320/4.png" alt="produk" ></img>
+        </div>
+      
+        
+      </div>
+    </div>
+
+  </section>
+
   <!-- CTA 1 -->
   <section class="bg-white dark:bg-gray-900">
     <div
@@ -353,7 +376,7 @@ import Social from '../components/section/SocialProofSection.astro';
               </button>
           </div>
           <!-- Modal body -->
-          <form class="p-4 md:p-5" enctype="multipart/form-data">
+          <form class="p-4 md:p-5" id="form" enctype="multipart/form-data">
 
             <div class="grid gap-6 mb-6 md:grid-cols-2">
               <div>
@@ -363,17 +386,17 @@ import Social from '../components/section/SocialProofSection.astro';
 
               <div>
                 <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
-                <input type="email" name="email" id="name" class="email bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Email" required="">
+                <input type="email" name="email" id="name" class="email bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Email" required>
               </div>
 
               <div>
                 <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Telepon</label>
-                <input type="number" name="phone" id="phone" class="name bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Telepon" required="">
+                <input type="number" name="phone" id="phone" class="name bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Telepon" required>
               </div>
 
               <div>
                 <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Perusahaan</label>
-                <input type="text" name="company" id="company" class="email bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Perusahaan" required="">
+                <input type="text" name="company" id="company" class="email bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Perusahaan" required>
               </div>
 
             </div>
@@ -383,10 +406,10 @@ import Social from '../components/section/SocialProofSection.astro';
                 
                   <div class="col-span-2">
                       <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ceritakan Bisnis Kamu</label>
-                      <textarea name="description" id="description" rows="4" class="description block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder=""></textarea>                    
+                      <textarea name="description" id="description" rows="4" class="description block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required></textarea>                    
                   </div>
               </div>
-              <button type="button" id="submit" class="inline-flex items-center text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5">
+              <button type="submit" id="submit" class="inline-flex items-center text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok me-3" viewBox="0 0 16 16">
                   <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
                 </svg>
@@ -401,8 +424,8 @@ import Social from '../components/section/SocialProofSection.astro';
 <script>
   import Parse from "parse/dist/parse.min.js";
   
-  let APPLICATION_ID = 'Xqt9DkRrsPUxHF8IYnWgWuHJUosBsvEHhALQY048';
-  let JAVASCRIPT_KEY = 'chHt2sIiXquNNB9z0pb8qI9fwmOqwllQ2LYdfKHO';
+  let APPLICATION_ID = 'qVkmDXfIDGPY6u7SHaaAYz3Eax6cDQUVrpicxFLz';
+  let JAVASCRIPT_KEY = 'SoCDwU1hWAAIrJiaDJ7WBQCUqPgzo3Yg1avXr4fi';
 
   Parse.initialize(APPLICATION_ID, JAVASCRIPT_KEY);
   Parse.serverURL = "https://parseapi.back4app.com";
@@ -436,10 +459,16 @@ import Social from '../components/section/SocialProofSection.astro';
 
   }
 
-  
-  document.querySelector("#submit").addEventListener("click", async function () {
-    send();
+  const form = document.getElementById('form');
+  form.addEventListener('submit', function(e) {
+      e.preventDefault(); // Mencegah form submit secara default
+      send();
   });
+
+  
+  // document.querySelector("#submit").addEventListener("click", async function () {
+  //   send();
+  // });
 
 
 </script>
