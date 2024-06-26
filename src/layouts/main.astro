@@ -14,6 +14,18 @@ import Header from "../components/utils/Header.astro";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
+    <!-- Google tag (gtag.js) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TNKJFJFS"
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "GTM-TNKJFJFS");
+    </script> -->
     <!-- Google Tag Manager -->
     <script is:inline>
       (function (w, d, s, l, i) {
@@ -30,11 +42,12 @@ import Header from "../components/utils/Header.astro";
     <!-- End Google Tag Manager -->
   </head>
   <body>
-    <Header />
-    <slot />
-
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" /> -->
-
+    <!-- <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+    </script> -->
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
@@ -44,6 +57,10 @@ import Header from "../components/utils/Header.astro";
         style="display:none;visibility:hidden"></iframe></noscript
     >
     <!-- End Google Tag Manager (noscript) -->
+    <Header />
+    <slot />
+
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" /> -->
 
     <script
       is:inline
